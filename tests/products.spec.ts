@@ -16,7 +16,7 @@ afterAll(async () => {
 
 describe("Pruebas de integración con Postgres", () => {
   it("debería insertar un producto correctamente", async () => {
-    const product = await createProduct("Coca-Cola", 10);
+    const product = await createProduct("coca-cola", 10);
     expect(product.name).toBe("Coca-Cola");
     expect(Number(product.price)).toBe(10);
   });
